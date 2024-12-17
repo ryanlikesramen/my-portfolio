@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme  from 'tailwindcss/defaultTheme';
 
 export default {
     darkMode: ["class"],
@@ -10,6 +11,9 @@ export default {
   theme: {
   	extend: {
   		colors: {
+			bodyColor : '#1c1c22',
+			lightSky: '#00ff990',
+			hoverColor: '#00e187',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

@@ -79,5 +79,15 @@
   body {
     @apply bg-background text-foreground;
   }
+  .hoverEffect{
+    @apply  transition-all duration-300 cursor-pointer;
+  }
+}
+
+:root{
+  --font-league: 'League Spartan', sans-serif;
+}
+body{
+  font-family: var(--font-league);
 }
 
