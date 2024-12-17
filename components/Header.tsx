@@ -10,9 +10,9 @@ const Header = () => {
   console.log(path);
   return (
     <header className="border-b border-b-hoverColor/25 bg-bodyColor text-white/80">
-      <Container className="py-5 flex items-center justify-between">
+      <Container className="py-5 flex items-center">
         <Logo title="Ryan Soriano" subtitle="." />
-        <div className="hidden md:inline-flex items-center gap-7 text-lg lowercase tracking-wide font-medium">
+        <div className="hidden md:inline-flex items-center gap-7 text-lg lowercase tracking-wide font-medium flex-grow justify-center">
           {navbarData?.map((item) => (
             <Link
               key={item?.title}
