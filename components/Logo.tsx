@@ -20,7 +20,7 @@ const Logo = ({ className, title, subtitle }: Props) => {
         >
           {title}{" "}
           <span className="text-hoverColor group-hover:text-white hoverEffect">
-            {subtitle}{" "}
+          {/* {subtitle} if I change my mind later */}
           </span>
         </h2>
       </Link>

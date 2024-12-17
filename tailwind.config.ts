@@ -11,9 +11,9 @@ export default {
   theme: {
   	extend: {
   		colors: {
-			bodyColor : '#1c1c22',
+			bodyColor : '#101113',
 			lightSky: '#00ff990',
-			hoverColor: '#00e187',
+			hoverColor: '#1abc9c   ',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
