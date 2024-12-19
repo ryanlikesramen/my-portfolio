@@ -4,10 +4,13 @@ import Logo from "./Logo";
 import Link from "next/link";
 import { navbarData } from "../constants";
 import { usePathname } from "next/navigation";
+import { Menu } from "lucide-react";
+import Sidebar from "@/components/Sidebar";
+import { useState } from "react";
 
 const Header = () => {
   const path = usePathname();
-  console.log(path);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <header className="border-b border-b-hoverColor/25 bg-bodyColor text-white/80">
       <Container className="py-5 flex items-center">
@@ -25,7 +28,25 @@ const Header = () => {
             </Link>
           ))}
         </div>
+        <button
+          aria-label="Toggle menu"
+          onClick={() => {
+            setIsSidebarOpen(!isSidebarOpen);
+          }}
+          className="inline-flex md:hidden relative hover:text-hoverColor hoverEffect"
+        >
+          <Menu />
+        </button>
       </Container>
+      {isSidebarOpen && (
+        <div className="md:hidden">
+          <Sidebar
+            isOpen={isSidebarOpen}
+            onClose={() => setIsSidebarOpen(false)}
+            pathname={path}
+          />
+        </div>
+      )}
     </header>
   );
 };

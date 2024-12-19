@@ -5,7 +5,7 @@ import React from "react";
 interface Props {
   className?: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
 }
 
 const Logo = ({ className, title, subtitle }: Props) => {

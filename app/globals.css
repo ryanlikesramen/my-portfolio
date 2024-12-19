@@ -80,7 +80,7 @@
     @apply bg-background text-foreground;
   }
   .hoverEffect{
-    @apply  transition-all duration-300 cursor-pointer;
+    @apply  transition-all duration-300 cursor-pointer ease-in-out;
   }
 }
 
